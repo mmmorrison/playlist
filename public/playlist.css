@@ -1,8 +1,8 @@
 * {
   font-family: "Avenir";
   height: 100%;
+  color: #DADAD6;
 }
-
 body {
   height: 600px;
   /*background-color: orange;*/
@@ -11,7 +11,6 @@ body {
   box-sizing: border-box;
   overflow: hidden;
 }
-
 header {
   background-color: #9B9B8C;
   height: 44px;
@@ -24,7 +23,6 @@ main {
   height: 600px;
   /*background-color: purple;*/
 }
-
 footer {
   clear: both;
   background-color: #686859;
@@ -34,11 +32,9 @@ footer {
   /*bottom: 4px;*/
   /*margin-top: -34px;*/
 }
-
 footer p {
   padding-left: 3%
 }
-
 .rightContent {
   background-image: url(resources/track.jpg);
   background-size: cover;
@@ -50,7 +46,6 @@ footer p {
   padding: 0px;
   height: 100%;
 }
-
 .leftContent {
   width: 50%;
   float: left;
@@ -58,19 +53,25 @@ footer p {
   overflow: hidden;
   /*background-color: blue;*/
 }
-
-.leftContent p {
+.bin {
   font-size: 34px;
   color: #490063;
-  margin: 0 auto;
-  left: 250px;
+  margin: 0px auto;
   top: 200px;
-  position: absolute;
-  /*text-align: center;*/
-}
-
-.button {
-  left: 250px;
   position: relative;
   text-align: center;
+  letter-spacing: .15em;
+  font-weight: 400;
+}
+
+button {
+  background-color: #353526;
+  border-radius: 5px;
+  height: 35px;
+  width: 170px;
+  border: 0;
+  position: relative;
+  bottom: 350px;
+  left: 230px;
+  margin: 0px auto;
 }
