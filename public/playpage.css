@@ -3,16 +3,15 @@
   height: 100%;
   /*width: 100%;*/
 }
-
 header {
   background-color: #9B9B8C;
   width: 100%;
   border-bottom: 1px solid black;
   color: #EDEDEA;
 }
-
 main {
   height: 74%;
+  width: 100%;
 }
 .playlistHeader {
   height: 15%;
@@ -67,6 +66,7 @@ button {
   position: relative;
   /*left: 230px;*/
   margin: 0px auto;
+  color: #EDEDEA;
 }
 footer {
   clear: both;
@@ -76,7 +76,6 @@ footer {
   height: 40px;
   padding-bottom: 2%;
 }
-
 footer p {
   padding-left: 3%;
   padding-top: 1%;
