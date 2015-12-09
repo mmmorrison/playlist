@@ -12,6 +12,7 @@ body {
   overflow: hidden;
   background-color: #EEEEEE;
 }
+
 header {
   background-color: #9B9B8C;
   height: 44px;
@@ -74,4 +75,6 @@ button {
   bottom: 550px;
   left: 230px;
   margin: 0px auto;
+  float: left;
+  color: 
 }
