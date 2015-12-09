@@ -1,0 +1,57 @@
+* {
+  font-family: "Avenir"
+}
+
+body {
+  height: auto;
+}
+
+header {
+  background-color: #9B9B8C;
+  height: 34px;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+main {
+  width: 100%;
+}
+
+footer {
+  clear: both;
+  background-color: #686859;
+  width: 100%;
+  position: relative;
+}
+
+footer p {
+  padding-left: 3%
+}
+
+.background {
+  background-image: url(resources/track.jpg);
+  background-size: 650px;
+  height: 800px;
+  width: 50%;
+  float: right;
+  position: relative;
+  opacity: .19;
+  clear: both;
+}
+
+.leftContent {
+  width: 50%;
+  float: left;
+  clear: both;
+}
+
+.leftContent p {
+  font-size: 34px;
+  color: #490063;
+  text-align: center;
+}
+
+.button {
+  left: 250px;
+  position: relative;
+  text-align: center;
+}
