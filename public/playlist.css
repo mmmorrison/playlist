@@ -11,7 +11,6 @@ body {
   overflow: hidden;
   background-color: #EEEEEE;
 }
-
 header {
   background-color: #9B9B8C;
   height: 44px;
@@ -44,9 +43,14 @@ footer p {
   float: right;
   opacity: .19;
   position: relative;
-  /*left: 20px;*/
-  /*padding: 0px;*/
   height: 100%;
+  z-index: 0;
+}
+.rightContent img {
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+  margin: 0px auto;
 }
 .leftContent {
   width: 50%;
