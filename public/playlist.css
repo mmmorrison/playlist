@@ -5,7 +5,6 @@
 }
 body {
   height: 600px;
-  /*background-color: orange;*/
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
@@ -23,7 +22,6 @@ main {
   width: 100%;
   overflow: auto;
   height: 100%;
-  /*background-color: purple;*/
 }
 footer {
   clear: both;
@@ -59,8 +57,6 @@ footer p {
   font-size: 34px;
   color: #490063;
   margin: 0px auto;
-  /*top: 200px;*/
-  /*position: relative;*/
   text-align: center;
   letter-spacing: .15em;
   font-weight: 400;
@@ -76,5 +72,4 @@ button {
   left: 230px;
   margin: 0px auto;
   float: left;
-  color: 
 }

@@ -1,26 +1,30 @@
 * {
   font-family: "Avenir";
   height: 100%;
-  width: 100%;
+  /*width: 100%;*/
 }
 
 header {
   background-color: #9B9B8C;
-  height: 44px;
   width: 100%;
   border-bottom: 1px solid black;
   color: #EDEDEA;
 }
+
+main {
+  height: 74%;
+}
 .playlistHeader {
-  height: 20%;
+  height: 15%;
   border: 0px;
   text-align: center;
   font-size: 25px;
   position: relative;
+  width: 100%;
 }
 .playlistHeader p {
   position: relative;
-  top: 20px;
+  top: 10px;
   color: #DADAD5;
 }
 .playBin {
@@ -38,17 +42,43 @@ header {
   height: 15%;
   width: 100%;
   margin: 0px auto;
-  overflow: auto;
-  overflow-y: hidden;
+  /*overflow: auto;
+  overflow-y: hidden;*/
   margin-top: 1%;
 }
+.buttonBox {
+  color: #EDEDEA;
+  float: left;
+  text-align: left;
+  display: inline;
+  /*border: 1px solid blue;*/
+  width: 30%;
+  height: 10%;
+  left: 60px;
+  position: relative;
+}
 button {
+  clear: both;
   background-color: #353526;
   border-radius: 5px;
   height: 35px;
   width: 170px;
   border: 0;
   position: relative;
-  left: 230px;
+  /*left: 230px;*/
   margin: 0px auto;
+}
+footer {
+  clear: both;
+  background-color: #686859;
+  width: 100%;
+  position: relative;
+  height: 40px;
+  padding-bottom: 2%;
+}
+
+footer p {
+  padding-left: 3%;
+  padding-top: 1%;
+  margin: 0px;
 }
