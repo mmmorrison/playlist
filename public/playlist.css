@@ -1,19 +1,28 @@
 * {
-  font-family: "Avenir"
+  font-family: "Avenir";
+  height: 100%;
 }
 
 body {
-  height: auto;
+  height: 600px;
+  /*background-color: orange;*/
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 header {
   background-color: #9B9B8C;
-  height: 34px;
+  height: 44px;
   width: 100%;
   border-bottom: 1px solid black;
 }
 main {
   width: 100%;
+  overflow: auto;
+  height: 600px;
+  /*background-color: purple;*/
 }
 
 footer {
@@ -21,33 +30,43 @@ footer {
   background-color: #686859;
   width: 100%;
   position: relative;
+  height: 40px;
+  /*bottom: 4px;*/
+  /*margin-top: -34px;*/
 }
 
 footer p {
   padding-left: 3%
 }
 
-.background {
+.rightContent {
   background-image: url(resources/track.jpg);
-  background-size: 650px;
-  height: 800px;
+  background-size: cover;
   width: 50%;
   float: right;
-  position: relative;
   opacity: .19;
-  clear: both;
+  position: relative;
+  left: 20px;
+  padding: 0px;
+  height: 100%;
 }
 
 .leftContent {
   width: 50%;
   float: left;
   clear: both;
+  overflow: hidden;
+  /*background-color: blue;*/
 }
 
 .leftContent p {
   font-size: 34px;
   color: #490063;
-  text-align: center;
+  margin: 0 auto;
+  left: 250px;
+  top: 200px;
+  position: absolute;
+  /*text-align: center;*/
 }
 
 .button {
