@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  // $("#submitBtn").click(function() {
   comet = $.ajax({
     url: "https://lit-fortress-6467.herokuapp.com/object",
     method: "GET",
@@ -7,9 +6,28 @@ $(document).ready(function() {
       foo: "bar"
     }
   })
-
   comet.done(function(payload) {
     console.log(payload);
+    // *********************POST REQUEST****************************
+    // comet = $.ajax({
+    //   url: "https://lit-fortress-6467.herokuapp.com/post",
+    //   method: "POST",
+    //   data: {
+    //     foo: "bar"
+    //   }
+    // })
+    // comet.done(function(payload) {
+    //     console.log(payload + " post");
+    //   })
+    // ***********************DOM MANIPULATIONS********************************
+    $(document).ready(function() {
+      payload["results"].forEach(function(e, i) {
+        var coverArt = payload["results"][i]["cover_art"];
+        var newId = "song" + i;
+
+        $(".scroller").append('<img src="images/' + coverArt + '"/>');
+      })
+    })
 
     var max = 2;
     var min = 0;
@@ -19,11 +37,17 @@ $(document).ready(function() {
     $(".frontImg0").append("<img src='images/" + randImage + "'/>");
     $(".frontImg1").append("<img src='images/" + randImage + "'/>");
     $(".frontImg2").append("<img src='images/" + randImage + "'/>");
-    $('.scroller').append("<img src='images/" + randImage + "'/>");
 
-    $("#clearBtn").click(function() {
-      $('.scroller').empty();
 
+
+
+
+    $("#submitBtn").click(function() {
+
+      $("#clearBtn").click(function() {
+        $('.scroller').empty();
+
+      })
     })
   })
-})
+});
