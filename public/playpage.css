@@ -32,36 +32,38 @@ main {
   height: 25%;
   width: 90%;
   margin: 0px auto;
-  margin-top: 2%;
+  margin-top: .5%;
   background-color: #EEEEEE;
 }
-
 .scroller img {
   width: 100px;
-  padding-left: 1%;
+  height: 100px;
+  padding-left: 1.5%;
+  text-align: center;
 }
 .scroller {
   color: black;
-  height: 15%;
+  height: 25%;
   width: 50%;
   margin: 0px auto;
-  overflow: auto;
-  overflow-y: hidden;
-  margin-top: 1%;
+  overflow: visible;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  margin-top: 2%;
+  white-space: nowrap;
 }
-
 .scroller div {
   width: 100px;
   padding-left: 3%;
   display: inline;
+  margin: 0px auto;
+  overflow-x: scroll;
 }
-
 .buttonBox {
   color: #EDEDEA;
   float: left;
   text-align: left;
   display: inline;
-  /*border: 1px solid blue;*/
   width: 30%;
   height: 10%;
   left: 60px;
@@ -75,7 +77,6 @@ button {
   width: 170px;
   border: 0;
   position: relative;
-  /*left: 230px;*/
   margin: 0px auto;
   color: #EDEDEA;
 }
