@@ -36,21 +36,29 @@ footer p {
   margin: 0px;
   font-size: 20px;
 }
-.rightContent {
-  background-image: url(resources/track.jpg);
-  background-size: cover;
+.background {
   width: 50%;
   float: right;
-  opacity: .19;
   position: relative;
   height: 100%;
-  z-index: 0;
+  background-image: url(resources/track.jpg);
+  background-size: cover;
+  opacity: .19;
+  z-index: -1;
 }
-.rightContent img {
-  width: 200px;
-  height: 200px;
+.rightContent {
   z-index: 1;
+}
+.rightImg:first-of-type {
+  position: relative;
+  top: 25px;
+}
+.rightImg {
+  width: 175px;
+  height: 175px;
   margin: 0px auto;
+  padding-bottom: 5%;
+  z-index: 1;
 }
 .leftContent {
   width: 50%;

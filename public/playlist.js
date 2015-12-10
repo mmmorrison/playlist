@@ -15,12 +15,15 @@ $(document).ready(function() {
     var min = 0;
     var randy = Math.floor(Math.random() * (max - min + 1)) + min;
     var randImage = payload["results"][randy]["cover_art"];
-    $(".rightContent").append("<img src='images/" + randImage + "'/>");
+
+    $(".frontImg0").append("<img src='images/" + randImage + "'/>");
+    $(".frontImg1").append("<img src='images/" + randImage + "'/>");
+    $(".frontImg2").append("<img src='images/" + randImage + "'/>");
     $('.scroller').append("<img src='images/" + randImage + "'/>");
 
     $("#clearBtn").click(function() {
       $('.scroller').empty();
 
+    })
   })
-})
 })
