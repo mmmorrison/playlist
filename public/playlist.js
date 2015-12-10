@@ -32,22 +32,36 @@ $(document).ready(function() {
         var addImage = '<img src="images/' + album + '"/>';
         var albumTitle = payload["results"][i]["title"];
         var randy = Math.floor(Math.random() * 3);
+        var randy1 = Math.floor(Math.random() * 4);
+        var randy2 = Math.floor(Math.random() * 5);
         var randImage = payload["results"][randy]["cover_art"];
+        var randImage1 = payload["results"][randy1]["cover_art"];
+        var randImage2 = payload["results"][randy2]["cover_art"];
         // **********************ADDS IMAGES ON THE SPLASH PAGE*************************
         $(".frontImg0").append("<img src='images/" + randImage + "'/>");
-        $(".frontImg1").append("<img src='images/" + randImage + "'/>");
-        $(".frontImg2").append("<img src='images/" + randImage + "'/>");
+        $(".frontImg1").append("<img src='images/" + randImage1 + "'/>");
+        $(".frontImg2").append("<img src='images/" + randImage2 + "'/>");
+        $(".frontImg0 img").not('img:first').remove();
+        $(".frontImg1 img").not('img:first').remove();
+        $(".frontImg2 img").not('img:first').remove();
+
         //***********************ADDS IMAGES TO PLAYLIST PAGE****************************
         $(".scroller").append('<div id=' + newId + ' class="addName"' + '>' + addImage + '</div>');
         // *********************ADD ALBUM TITLE TO PLAYLIST DIV*****************************
         $("#" + newId).on("click", function() {
           $("#storeNames").append(albumTitle + "<br>");
 })
+})
+})
+})
 
 
-})
-  })
-})
+
+
+
+
+
+
 
 
 
