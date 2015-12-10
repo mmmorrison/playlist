@@ -17,14 +17,18 @@
   <main>
     <div class="scroller">
     </div>
+    <form action="https://lit-fortress-6467.herokuapp.com/post" method="post">
 
-    <div class="playBin" id="storeNames"></div>
-    <br>
+      <div class="playBin" id="storeNames"></div>
+      <br>
 
-    <div class="buttonBox">
-      <button id="clearBtn" class="clearTracks">clear tracks</button>
-      <button id="submitBtn" class="submitBin">submit bin</button>
-    </div>
+      <div class="buttonBox">
+        <button id="clearBtn" class="clearTracks">clear tracks</button>
+        <button name="post" value="playlist" id="submitBtn" class="submitBin">submit bin</button>
+      </div>
+
+    </form>
+
   </main>
   <footer>
     <p>&copy; 2015 Maria M. Morrison</p>

@@ -10,20 +10,6 @@ $(document).ready(function() {
   comet.done(function(payload) {
     console.log(payload);
 
-    // *********************POST REQUEST****************************
-    //   comet = $.ajax({
-    //   url: "https://lit-fortress-6467.herokuapp.com/post",
-    //     method: "POST",
-    //     data: {
-    //       foo: "bar"
-    //     }
-    // })
-    // comet.done(function(payload) {
-    //     console.log(payload + " post");
-    //   })
-
-
-
     // ***********************LOOPS OVER JSON*******************************
     payload["results"].forEach(function(e, i) {
       // *************************VARIABLES*******************************
@@ -59,8 +45,9 @@ $(document).ready(function() {
 
 
 $("#submitBtn").click(function() {
-
+  console.log("Playlist Sent");
 });
+
 $("#clearBtn").click(function() {
   $('.playBin').empty();
 });
