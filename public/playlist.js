@@ -43,10 +43,15 @@ $(document).ready(function() {
 });
 
 
-
 $("#submitBtn").click(function() {
-  console.log("Playlist Sent");
+  var list = $("form").serialize();
+  console.log("Playlist Sent" + list);
 });
+
+
+
+
+
 
 $("#clearBtn").click(function() {
   $('.playBin').empty();
