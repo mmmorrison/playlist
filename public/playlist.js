@@ -25,9 +25,11 @@ $(document).ready(function() {
         var coverArt = payload["results"][i]["cover_art"];
         var newId = "song" + i;
 
-        $(".scroller").append('<img src="images/' + coverArt + '"/>');
+        $(".scroller").append('<div id='+newId+'>' + '<img src="images/' + coverArt + '"/>' + '</div>');
       })
     })
+
+
 
     var max = 2;
     var min = 0;
