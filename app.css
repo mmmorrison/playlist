@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+header {
+  border: 1px solid black;
+  width: 100%;
+  height: 10vh;
+  background-color: orange;
+}
+section {
+  border: 1px solid black;
+}
+.left {
+  float: left;
+  width: 50%;
+  height: 80vh;
+  background-color: red;
+}
+.right {
+  float: right;
+  width: 50%;
+  height: 80vh;
+  background-color: grey;
+}
+footer {
+  border: 1px solid black;
+  width: 100%;
+  height: 10vh;
+  background-color: green;
+  position: fixed;
+  bottom: 0;
+}
+.tracks {
+  background-color: brown;
+  border: 1px solid black;
+  height: 90%;
+  width: 80%;
+  margin: 0px auto;
+  padding-top: 10%;
+}
+.images {
+  height: 25%;
+  width: 25%;
+  background-color: purple;
+  border: 1px solid black;
+  margin: 0px auto;
+  padding-bottom: 10%;
+}

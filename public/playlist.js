@@ -33,7 +33,7 @@ $(document).ready(function() {
       $(".frontImg2 img").not('img:first').remove();
 
       //***********************ADDS IMAGES TO PLAYLIST PAGE****************************
-      $(".scroller").append('<div id=' + newId + ' class="addName"' + '>' + addImage + '</div>');
+        $(".scroller").append('<div id=' + newId + ' class="addName"' + '>' + addImage + '</div>');
       // *********************ADD ALBUM TITLE TO PLAYLIST DIV*****************************
       $("#" + newId).on("click", function() {
         $("#storeNames").append(artist + ": " + albumTitle + "<br>");
@@ -47,11 +47,6 @@ $("#submitBtn").click(function() {
   var list = $("form").serialize();
   console.log("Playlist Sent" + list);
 });
-
-
-
-
-
 
 $("#clearBtn").click(function() {
   $('.playBin').empty();
